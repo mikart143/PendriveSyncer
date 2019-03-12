@@ -17,10 +17,9 @@ namespace Pendrive.Syncer.UWP.ConsoleApp
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            DatabaseAccess dbAccess = new DatabaseAccess(new DatabaseConfig());
-            dbAccess.Devices.Insert(new Device(){DeviceIdLine = "Test"});
+;
             DevicesControler controler = new DevicesControler();
             controler.StartWatcher();
        

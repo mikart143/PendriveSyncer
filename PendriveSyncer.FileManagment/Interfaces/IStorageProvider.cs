@@ -4,7 +4,13 @@ using System.Text;
 
 namespace PendriveSyncer.FileManagment
 {
-    public class IStorageProvider
+    public abstract class IStorageProvider
     {
+        protected internal IStorageProvider() { }
+
+        public abstract void BrutalSync();
+
+        public abstract void NormalSync();
+
     }
 }

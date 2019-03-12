@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Devices.Enumeration;
@@ -13,7 +14,7 @@ namespace Pendrive.Syncer.UWP.ConsoleApp.Utility
     class DevicesControler
     {
         public static DeviceWatcher watcher = null;
-        List<DeviceInformation> deviceInformations = new List<DeviceInformation>();
+        private List<DeviceInformation> _deviceInformations = new List<DeviceInformation>();
         public void StartWatcher()
         {
             
@@ -28,7 +29,7 @@ namespace Pendrive.Syncer.UWP.ConsoleApp.Utility
 
         private void WatcherOnUpdated(DeviceWatcher sender, DeviceInformationUpdate args)
         {
-            deviceInformations.Find(x => x.Id == args.Id).Update(args);
+            _deviceInformations.Find(x => x.Id == args.Id).Update(args);
         }
 
         private void WatcherOnStopped(DeviceWatcher sender, object args)
@@ -36,21 +37,29 @@ namespace Pendrive.Syncer.UWP.ConsoleApp.Utility
             
         }
 
-        private async void WatcherOnEnumerationCompleted(DeviceWatcher sender, object args)
+        private void WatcherOnEnumerationCompleted(DeviceWatcher sender, object args)
         {
 
         }
 
         private void WatcherOnRemoved(DeviceWatcher sender, DeviceInformationUpdate args)
         {
-            deviceInformations.RemoveAll(x => x.Id == args.Id);
+            _deviceInformations.RemoveAll(x => x.Id == args.Id);
         }
 
-        private async void WatcherOnAdded(DeviceWatcher sender, DeviceInformation args)
+        private  void WatcherOnAdded(DeviceWatcher sender, DeviceInformation args)
         {
-            deviceInformations.Add(args);
-            var DeviceInstanceId = args.Properties["System.Devices.DeviceInstanceId"];
+            _deviceInformations.Add(args);
+            string deviceInstanceId = args.Properties["System.Devices.DeviceInstanceId"] as string;
+            string sn = GetDeviceSerialNumber(deviceInstanceId);
 
+
+        }
+
+        private string GetDeviceSerialNumber(string deviceInstanceId)
+        {
+            var list = deviceInstanceId.Split("#").ToList();
+            return list.Take(list.Count - 1).LastOrDefault();
         }
     }
 }

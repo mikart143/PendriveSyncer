@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pendrive.Syncer.UWP.Console
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PendriveSyncer.DataAccess", "PendriveSyncer.DataAccess\PendriveSyncer.DataAccess.csproj", "{78050631-AA9B-42DB-AED8-BDB08BAD699E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PendriveSyncer.FileManagment", "PendriveSyncer.FileManagment\PendriveSyncer.FileManagment.csproj", "{15B9A8CD-53E8-490D-BAD0-019E4A768A94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PendriveSyncer.FileManagment", "PendriveSyncer.FileManagment\PendriveSyncer.FileManagment.csproj", "{15B9A8CD-53E8-490D-BAD0-019E4A768A94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PendriveSyncer.ConsoleGUI", "PendriveSyncer.ConsoleGUI\PendriveSyncer.ConsoleGUI.csproj", "{119148EE-FB48-488F-94C7-3FA8486EFFC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,26 @@ Global
 		{15B9A8CD-53E8-490D-BAD0-019E4A768A94}.Release|x64.Build.0 = Release|Any CPU
 		{15B9A8CD-53E8-490D-BAD0-019E4A768A94}.Release|x86.ActiveCfg = Release|Any CPU
 		{15B9A8CD-53E8-490D-BAD0-019E4A768A94}.Release|x86.Build.0 = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|ARM.Build.0 = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|x64.Build.0 = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Debug|x86.Build.0 = Debug|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|ARM.ActiveCfg = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|ARM.Build.0 = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|ARM64.Build.0 = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|x64.ActiveCfg = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|x64.Build.0 = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|x86.ActiveCfg = Release|Any CPU
+		{119148EE-FB48-488F-94C7-3FA8486EFFC8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
