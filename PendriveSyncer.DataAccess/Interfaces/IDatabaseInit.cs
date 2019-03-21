@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Text;
-using LiteDB;
-
-namespace PendriveSyncer.DataAccess
+﻿namespace PendriveSyncer.DataAccess
 {
-    public abstract class IDatabaseInit
+    public interface  IDatabaseInit
     {
         
-        public abstract string GetConnectionString();
+         string GetConnectionString();
 
     }
 }

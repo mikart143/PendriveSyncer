@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PendriveSyncer.ConsoleGUI
+namespace PendriveSyncer.Console.Silent
 {
     public class Class1
     {

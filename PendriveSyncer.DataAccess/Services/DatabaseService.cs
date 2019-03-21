@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PendriveSyncer.DataAccess.DTO;
+using PendriveSyncer.DataAccess.Interfaces;
 using PendriveSyncer.DataAccess.Models;
 
 namespace PendriveSyncer.DataAccess.Services
 {
-    public class DatabaseService
+    public class DatabaseService:IDatabaseService
     {
-        private readonly DatabaseAccess _databaseAccess;
-        public DatabaseService(IDatabaseInit databaseInit)
+        private readonly IDatabaseAccess _databaseAccess;
+        public DatabaseService(IDatabaseAccess databaseAccess)
         {
-            _databaseAccess = new DatabaseAccess(databaseInit.GetConnectionString());
+            _databaseAccess = databaseAccess;
         }
 
         public bool CheckIfDeviceExist(string deviceUniqueId)

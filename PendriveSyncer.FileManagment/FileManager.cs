@@ -15,10 +15,10 @@ namespace PendriveSyncer.FileManagment
 
         }
 
-        public bool CapableOfSync(string serialNumber)
-        {
-            return 
-        }
+//        public bool CapableOfSync(string serialNumber)
+//        {
+//            return 
+//        }
         public void CreateSynchornizationList(string serialNumber, string driveLetter)
         {
 

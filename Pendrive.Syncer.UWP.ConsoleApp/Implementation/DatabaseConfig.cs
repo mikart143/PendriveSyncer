@@ -13,7 +13,7 @@ namespace Pendrive.Syncer.UWP.ConsoleApp.Config
     {
         private string DBName { get { return "Database.db"; } }
 
-        public override string GetConnectionString()
+        public  string GetConnectionString()
         {
             var localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             var folderPath = localFolder.Path;
