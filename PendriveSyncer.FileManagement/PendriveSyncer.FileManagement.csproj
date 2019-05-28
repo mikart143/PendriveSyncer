@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PendriveSyncer.DataAccess\PendriveSyncer.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

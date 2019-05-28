@@ -23,7 +23,7 @@ namespace PendriveSyncer.WDA.ConsoleApp
             builder.RegisterType<CommandLineParser>();
             builder.RegisterType<StorageDeviceListener>().As<IStorageDeviceListener>();
             builder.RegisterType<LocalStorage>();
-            builder.RegisterType<FileSynchoronization>();
+            builder.RegisterType<FileUtility>();
 
 
             return builder.Build();

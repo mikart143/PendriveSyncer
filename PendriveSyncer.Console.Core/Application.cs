@@ -11,7 +11,7 @@ namespace PendriveSyncer.Console.Core
         private readonly CommandLineParser _commandLineParser;
 //        private readonly StorageDeviceManager _storageDeviceManager;
         private readonly LocalStorage _localStorage;
-        public Application(CommandLineParser commandLineParser,  LocalStorage localStorage, FileSynchoronization sync)
+        public Application(CommandLineParser commandLineParser,  LocalStorage localStorage, FileUtility sync)
         {
             _commandLineParser = commandLineParser;
 //            _storageDeviceManager = storageDeviceManager;
