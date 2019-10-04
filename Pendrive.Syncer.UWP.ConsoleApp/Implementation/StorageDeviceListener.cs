@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.InteropServices;
 using Windows.Devices.Enumeration;
+using Windows.Foundation.Metadata;
 using PendriveSyncer.Console.Core.Interfaces;
 using PendriveSyncer.Console.Core.Model;
 
